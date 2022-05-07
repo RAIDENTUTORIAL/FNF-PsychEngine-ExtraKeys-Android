@@ -40,6 +40,7 @@ class MainMenuState extends MusicBeatState
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		#if !switch 'donate', #end
+                #if !switch 'donate', #end
 		'options'
 	];
 
@@ -208,6 +209,14 @@ class MainMenuState extends MusicBeatState
 				if (optionShit[curSelected] == 'donate')
 				{
 					CoolUtil.browserLoad('https://youtu.be/dQw4w9WgXcQ');
+				}
+				else
+				{
+				if (controls.ACCEPT)
+			{
+				if (optionShit[curSelected] == 'donate')
+				{
+				CoolUtil.browserLoad('https://www.amazon.com/Friday-Funkin-Boyfriend-Plushies-Tankman/dp/B097LSDSCR');
 				}
 				else
 				{
